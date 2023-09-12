@@ -14,6 +14,8 @@ exports.createStudent = async(req, res) =>{
         email:req.body.email,
         phoneNumber:req.body.phoneNumber,
         address:req.body.address,
+        dateOfBirth:req.body.dateOfBirth,
+        course:req.body.dateOfBirth
         
 
     }) 
