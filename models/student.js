@@ -8,7 +8,7 @@ const studentSchema = new mongoose.Schema({
   phoneNumber: { type: String, required: true },
   address: { type: String, required: true },
   dateOfBirth: { type: Date, required: true },
-  course: { type: String, required: true },
+  course: { type: String, required: true }
 
 
 });
