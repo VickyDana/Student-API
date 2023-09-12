@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const DB = require("./config/studentConfig")
 const studentRoutes = require('./routes/studentRoutes');
 
 const app = express();
