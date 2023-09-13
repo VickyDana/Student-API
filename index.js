@@ -2,7 +2,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const DB = require("./config/studentConfig");
 const studentRoutes = require('./routes/studentRoutes');
-const signupRoutes = require('./routes/signupRoutes');
 const configData = require("./config/studentConfig");
 
 
@@ -23,10 +22,6 @@ mongoose.connect(DB.db_url, {
 app.use(express.json());
 
 app.use('/students', studentRoutes);
-app.use('/users', signupRoutes );
-
-
-
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
