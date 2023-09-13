@@ -7,15 +7,16 @@ exports.createStudent = async(req, res) =>{
         return;
     }
     
-    const student = new Student(req.body); 
-    
-    try{
+    try
+    {
+        const student = new Student(req.body); 
+
         student.save()
-        .then(student =>{
+        .then(student => {
 
             console.log(student)
             res.send(student)
-        })
+        });
         
     }catch (err){
          res.status(500).send('Could not create a new student')
@@ -33,12 +34,15 @@ exports.getStudents = async (req, res) => {
     }
 }
 exports.deleteStudents = async(req, res) => {
-    try {
-
+    try 
+    {
         const id = req.params.id;
+        
         const students = await Student.findByIdAndDelete(id);
         res.status(200).json(students);
-      } catch (error) {
+      } 
+      catch (error) 
+      {
         res.status(500).json({ error: error.message });
       }
 }
