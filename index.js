@@ -2,9 +2,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const DB = require("./config/studentConfig")
 const studentRoutes = require('./routes/studentRoutes');
+const configData = require("./config/studentConfig")
 
 const app = express();
-const port = 3865;
+const port = configData.db_port;
 
  
 mongoose.connect(DB.db_url, {

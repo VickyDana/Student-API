@@ -1,3 +1,4 @@
 module.exports = {
-    db_url : 'mongodb://127.0.0.1:27017/mydb'
+    db_url : 'mongodb://127.0.0.1:27017/myStudents',
+    db_port : 3865
 }
