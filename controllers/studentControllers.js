@@ -15,7 +15,7 @@ exports.createStudent = async(req, res) =>{
         phoneNumber:req.body.phoneNumber,
         address:req.body.address,
         dateOfBirth:req.body.dateOfBirth,
-        course:req.body.dateOfBirth
+        course:req.body.course
         
 
     }) 
