@@ -17,7 +17,6 @@ exports.createStudent = async(req, res) =>{
         dateOfBirth:req.body.dateOfBirth,
         course:req.body.course
         
-
     }) 
     
     try{
@@ -43,3 +42,14 @@ exports.getStudents = async (req, res) => {
         res.status(500).json({error: error.message});
     }
 }
+exports.deleteStudents = async(req, res) => {
+    try {
+
+        const id = req.params.id;
+        const students = await Student.findByIdAndDelete(id);
+        res.status(200).json(students);
+      } catch (error) {
+        res.status(500).json({ error: error.message });
+      }
+}
+
