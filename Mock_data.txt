@@ -1,6 +1,6 @@
 [
   {
-    "_id": "6501692af769a9bbf3336dc1",
+
     "studentNumber": 12345670,
     "firstName": "Sfiso",
     "lastName": "Mawila",
@@ -8,23 +8,23 @@
     "phoneNumber": "0628258537",
     "address": "Capetown",
     "dateOfBirth": "2009-04-10T22:00:00.000Z",
-    "course": "FullStack",
-    "__v": 0
+    "course": "FullStack"
+    
   },
+  
   {
-    "_id": "65016cad884df544d61f0b1a",
-    "studentNumber": 12345670,
+    "studentNumber": "12345670",
     "firstName": "Kyle",
     "lastName": "White",
     "email": "kylewhite@gmail.com",
     "phoneNumber": "0812845687",
     "address": "England",
     "dateOfBirth": "1874-04-10T22:08:00.000Z",
-    "course": "Sports",
-    "__v": 0
+    "course": "Sports"
+    
   },
   {
-    "_id": "65016e86884df544d61f0b1d",
+
     "studentNumber": 7676358735,
     "firstName": "Benjamin",
     "lastName": "Franklin",
@@ -32,11 +32,11 @@
     "phoneNumber": "1234567890",
     "address": "USA",
     "dateOfBirth": "1874-04-10T22:08:00.000Z",
-    "course": "Politics",
-    "__v": 0
+    "course": "Politics"
+    
   },
   {
-    "_id": "650171ed79b55a407c60981b",
+
     "studentNumber": 7398792,
     "firstName": "Louis",
     "lastName": "Mandela",
@@ -44,11 +44,11 @@
     "phoneNumber": "ghhdfv",
     "address": "South Africa",
     "dateOfBirth": "1678-04-10T22:08:00.000Z",
-    "course": "Politics",
-    "__v": 0
+    "course": "Politics"
+    
   },
   {
-    "_id": "6501721279b55a407c60981d",
+   
     "studentNumber": 78935653,
     "firstName": "Carren",
     "lastName": "John",
@@ -56,11 +56,11 @@
     "phoneNumber": "543627235",
     "address": "Australia",
     "dateOfBirth": "1990-04-10T22:00:00.000Z",
-    "course": "Law",
-    "__v": 0
+    "course": "Law"
+    
   },
   {
-    "_id": "6501727a79b55a407c609820",
+  
     "studentNumber": 90943282,
     "firstName": "Lesile",
     "lastName": "Ferile",
@@ -68,11 +68,11 @@
     "phoneNumber": "7356843",
     "address": "Australia",
     "dateOfBirth": "1990-04-10T22:00:00.000Z",
-    "course": "Law",
-    "__v": 0
+    "course": "Law"
+    
   },
   {
-    "_id": "650172af79b55a407c609822",
+   
     "studentNumber": 90943282,
     "firstName": "Michael",
     "lastName": "Jackson",
@@ -80,11 +80,11 @@
     "phoneNumber": "88327392",
     "address": "America",
     "dateOfBirth": "1892-04-10T22:30:00.000Z",
-    "course": "Dance",
-    "__v": 0
+    "course": "Dance"
+    
   },
   {
-    "_id": "650172e679b55a407c609824",
+   
     "studentNumber": 9157530,
     "firstName": "Muzi",
     "lastName": "Dlamini",
@@ -92,11 +92,11 @@
     "phoneNumber": "8974373",
     "address": "South Africa",
     "dateOfBirth": "2002-04-10T22:00:00.000Z",
-    "course": "Catfishing",
-    "__v": 0
+    "course": "Catfishing"
+    
   },
   {
-    "_id": "6501731279b55a407c609826",
+   
     "studentNumber": 89277843,
     "firstName": "Thando",
     "lastName": "Zulu",
@@ -104,11 +104,11 @@
     "phoneNumber": "7647667",
     "address": "South Africa",
     "dateOfBirth": "2000-04-10T22:00:00.000Z",
-    "course": "Computer Science",
-    "__v": 0
+    "course": "Computer Science"
+    
   },
   {
-    "_id": "6501733479b55a407c609828",
+    
     "studentNumber": 786349873,
     "firstName": "Shaka",
     "lastName": "Zulu",
@@ -116,11 +116,11 @@
     "phoneNumber": "789033",
     "address": "South Africa",
     "dateOfBirth": "1820-04-10T22:08:00.000Z",
-    "course": "History",
-    "__v": 0
+    "course": "History"
+    
   },
   {
-    "_id": "650173dd79b55a407c60982b",
+    
     "studentNumber": 290339,
     "firstName": "Thembi",
     "lastName": "Nxumalo",
@@ -128,11 +128,11 @@
     "phoneNumber": "8923873",
     "address": "South Africa",
     "dateOfBirth": "2000-04-10T22:00:00.000Z",
-    "course": "Medicine",
-    "__v": 0
+    "course": "Medicine"
+ 
   },
   {
-    "_id": "6501742679b55a407c60982e",
+ 
     "studentNumber": 785335653,
     "firstName": "Lwazi",
     "lastName": "Nxumalo",
@@ -140,7 +140,7 @@
     "phoneNumber": "873473593",
     "address": "South Africa",
     "dateOfBirth": "2000-04-10T22:00:00.000Z",
-    "course": "Psychology",
-    "__v": 0
+    "course": "Psychology"
+    
   }
 ]
