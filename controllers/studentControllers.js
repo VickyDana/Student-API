@@ -18,7 +18,7 @@ exports.createStudent = async(req, res) =>{
         phoneNumber:req.body.phoneNumber,
         address:req.body.address,
         dateOfBirth:req.body.dateOfBirth,
-        course:req.body.dateOfBirth
+        course:req.body.course
         
 
     }) 
@@ -36,3 +36,13 @@ exports.createStudent = async(req, res) =>{
          console.log(`Some err occured : ${err.message}`)
     }
 };
+
+exports.getStudents = async (req, res) => {
+    try{
+        const students = await Student.find();
+        res.status(200).json(students);
+    }
+    catch(error){
+        res.status(500).json({error: error.message});
+    }
+}
