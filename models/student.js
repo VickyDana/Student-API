@@ -9,10 +9,6 @@ const studentSchema = new mongoose.Schema({
   address: { type: String, required: true },
   dateOfBirth: { type: Date, required: true },
   course: { type: String, required: true }
-
-
 });
-
-
 
 module.exports = mongoose.model('Student', studentSchema);
