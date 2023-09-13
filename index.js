@@ -1,7 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const DB = require("./config/studentConfig")
+const DB = require("./config/studentConfig");
 const studentRoutes = require('./routes/studentRoutes');
+const userRoutes = require('./routes/userRoutes');
 
 const app = express();
 const port = 3865;
@@ -20,6 +21,7 @@ mongoose.connect(DB.db_url, {
 app.use(express.json());
 
 app.use('/students', studentRoutes);
+app.use('/users', userRoutes );
 
 
 app.listen(port, () => {

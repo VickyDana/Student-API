@@ -1,9 +1,6 @@
 const Student = require('../models/student');
 
 
-
-
-
 exports.createStudent = async(req, res) =>{
     if(!req.body){
         res.status(400).send("Cannot add without info")
