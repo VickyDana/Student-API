@@ -7,17 +7,7 @@ exports.createStudent = async(req, res) =>{
         return;
     }
     
-    const student = new Student({
-        studentNumber:req.body.studentNumber,
-        firstName:req.body.firstName,
-        lastName: req.body.lastName,
-        email:req.body.email,
-        phoneNumber:req.body.phoneNumber,
-        address:req.body.address,
-        dateOfBirth:req.body.dateOfBirth,
-        course:req.body.course
-        
-    }) 
+    const student = new Student(req.body); 
     
     try{
         student.save()
