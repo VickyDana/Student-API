@@ -5,7 +5,8 @@ const studentController = require('../controllers/studentControllers');
 
 router.post('/create', studentController.createStudent);
 router.get('/getStudents', studentController.getStudents);
-router.delete('/deleteStudents/:id',studentController.deleteStudents);
+router.delete('/deleteOne/:id',studentController.deleteOne);
+router.delete('/deleteAll', studentController.deleteAll)
 router.put('/updateStudents/:id',studentController.updateStudents);
 
 module.exports = router;

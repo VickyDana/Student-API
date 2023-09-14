@@ -33,7 +33,7 @@ exports.getStudents = async (req, res) => {
         res.status(500).json({error: error.message});
     }
 }
-exports.deleteStudents = async(req, res) => {
+exports.deleteOne = async(req, res) => {
     try 
     {
         const id = req.params.id;
@@ -46,6 +46,20 @@ exports.deleteStudents = async(req, res) => {
         res.status(500).json({ error: error.message });
       }
 }
+
+exports.deleteAll = (req, res)=>{
+
+    Student.deleteMany()
+    .then(data=>{
+      res.send(data)
+      console.log(data)
+    })
+    .catch(error=>{
+      res.status(500).send("Could not delete all students", error)
+      console.log("Could not delete all", error)
+    })
+}
+
 exports.updateStudents = async(req, res) => {
     try {
         
