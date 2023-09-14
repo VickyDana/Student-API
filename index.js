@@ -1,14 +1,17 @@
 const express = require('express');
+const app = express();
 const mongoose = require('mongoose');
 const DB = require("./config/studentConfig");
 const studentRoutes = require('./routes/studentRoutes');
 const configData = require("./config/studentConfig");
+const cors = require('cors')
 
 
-const app = express();
+
 const port = configData.db_port;
 
- 
+app.use(cors())
+// app.use
 mongoose.connect(DB.db_url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
