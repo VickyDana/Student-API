@@ -33,6 +33,19 @@ exports.getStudents = async (req, res) => {
         res.status(500).json({error: error.message});
     }
 }
+
+exports.getAStudent = async (req, res) => {
+    try{
+        const id = req.params.id;
+        const student = await Student.find({studentNumber:id});
+        res.status(200).json(student);
+    }
+    catch(error){
+        res.status(500).json({error: error.message});
+    }
+}
+
+
 exports.deleteOne = async(req, res) => {
     try 
     {
