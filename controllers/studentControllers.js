@@ -51,8 +51,8 @@ exports.deleteOne = async(req, res) => {
     {
         const id = req.params.id;
         
-        const students = await Student.findByIdAndDelete(id);
-        res.status(200).json(students);
+        const student = await Student.deleteOne({studentNumber:id});
+        res.status(200).json(student);
       } 
       catch (error) 
       {
