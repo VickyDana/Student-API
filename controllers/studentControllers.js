@@ -52,7 +52,7 @@ exports.SearchStudents = async(req, res) =>{
 
     // const students = await Student.find({firstName: { $in: [SearchTerm] }, studentNumber: { $in: [SearchTerm] }})
 
-    const ress = [];
+    let ress = [];
 
     let students = await Student.where( "studentNumber").in(SearchTerm)
 
@@ -83,7 +83,14 @@ exports.SearchStudents = async(req, res) =>{
       ress.push(students);
     }
 
-    res.status(200).json(ress[0]);
+    if(ress.length != 0){
+      ress = ress[0];
+    }
+    else{
+      ress = [];
+    }
+
+    res.status(200).json(ress);
   }
   catch(error){
     res.status(500).json({error: error.message});
