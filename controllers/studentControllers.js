@@ -45,6 +45,50 @@ exports.getAStudent = async (req, res) => {
     }
 }
 
+exports.SearchStudents = async(req, res) =>{
+  try
+  {
+    const SearchTerm = req.params.id;
+
+    // const students = await Student.find({firstName: { $in: [SearchTerm] }, studentNumber: { $in: [SearchTerm] }})
+
+    const ress = [];
+
+    let students = await Student.where( "studentNumber").in(SearchTerm)
+
+    if(students.length != 0){
+      ress.push(students);
+    }
+
+    students = await Student.where("firstName").in(SearchTerm)
+
+    if(students.length != 0){
+      ress.push(students);
+    }
+
+     students = await Student.where("lastName").in(SearchTerm)
+     if(students.length != 0){
+      ress.push(students);
+    }
+     students = await Student.where("email").in(SearchTerm)
+     if(students.length != 0){
+      ress.push(students);
+    }
+     students = await Student.where("phoneNumber").in(SearchTerm)
+     if(students.length != 0){
+      ress.push(students);
+    }
+     students = await Student.where("course").in(SearchTerm);
+     if(students.length != 0){
+      ress.push(students);
+    }
+
+    res.status(200).json(ress[0]);
+  }
+  catch(error){
+    res.status(500).json({error: error.message});
+  }
+}
 
 
 exports.deleteOne = async(req, res) => {
